@@ -5,7 +5,7 @@ Feature: Admin Login Page
 
   @javascript @example
   Scenario Outline: You should NOT be able to access any Admin page directly when NOT logged in
-    Given I go to "/admin/admin/"
+    Given I go to the local Admin Login page
     When I go to <target>
     Then I should be on "/admin/admin/"
 
@@ -19,7 +19,7 @@ Feature: Admin Login Page
 
   @javascript
   Scenario: You should be able to Login
-    Given I go to "/admin/admin/"
+    Given I go to the local Admin Login page
     When I fill in "Username" with "admin"
     And I fill in "Password" with "admin123"
     And I press "Sign in"
@@ -27,7 +27,7 @@ Feature: Admin Login Page
 
   @javascript
   Scenario: You should be able to Logout
-    Given I go to "/admin/admin/"
+    Given I go to the local Admin Login page
     When I fill in "Username" with "admin"
     And I fill in "Password" with "admin123"
     And I press "Sign in"
@@ -36,7 +36,7 @@ Feature: Admin Login Page
 
   @javascript
   Scenario: You should NOT be able to access an Admin page directly after Logging Out
-    Given I go to "/admin/admin/"
+    Given I go to the local Admin Login page
     When I fill in "Username" with "admin"
     And I fill in "Password" with "admin123"
     And I press "Sign in"

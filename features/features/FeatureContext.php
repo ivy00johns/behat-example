@@ -63,12 +63,12 @@ class FeatureContext extends MinkContext
     }
 
     /**
-     * @Given /^I go to the Admin Login page$/
+     * @Given /^I go to the local Admin Login page$/
      */
-    public function iGoToTheAdminLoginPage()
+    public function iGoToTheLocalAdminLoginPage()
     {
         $session = $this->getSession();
-        $session->visit('/admin/admin/');
+        $session->visit('http://127.0.0.1:32769/admin/admin/');
     }
 
 }
