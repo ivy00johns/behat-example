@@ -53,14 +53,12 @@ class FeatureContext extends RawMinkContext
         ));
     }
 
-
     /**
      * @Given /^I am on the Admin Login page$/
      */
     public function iAmOnTheAdminLoginPage()
     {
-        $session = $this->getSession();
-        $session->visit($this->baseUrl . '/admin/admin/');
+        $this->getSession()->visit($this->baseUrl . '/admin/admin/');
     }
 
     /**
@@ -68,8 +66,7 @@ class FeatureContext extends RawMinkContext
      */
     public function iGoToTheAdminLogoutPage()
     {
-        $session = $this->getSession();
-        $session->visit($this->baseUrl . '/admin/admin/auth/logout/');
+        $this->getSession()->visit($this->baseUrl . '/admin/admin/auth/logout/');
     }
 
     /**
@@ -77,8 +74,7 @@ class FeatureContext extends RawMinkContext
      */
     public function iGoToTheAdminDashboardPage()
     {
-        $session = $this->getSession();
-        $session->visit($this->baseUrl . '/admin/admin/dashboard/');
+        $this->getSession()->visit($this->baseUrl . '/admin/admin/dashboard/');
     }
 
     /**
@@ -106,8 +102,7 @@ class FeatureContext extends RawMinkContext
      */
     public function iGoToGoogle()
     {
-        $session = $this->getSession();
-        $session->visit('https://www.google.com/');
+         $this->getSession()->visit('https://www.google.com/');
     }
 
     /**
@@ -132,8 +127,7 @@ class FeatureContext extends RawMinkContext
      */
     public function iGoToTheAddCategoryPage()
     {
-        $session = $this->getSession();
-        $session->visit($this->baseUrl . '/admin/catalog/category/add/store/0/parent/1');
+        $this->getSession()->visit($this->baseUrl . '/admin/catalog/category/add/store/0/parent/1');
     }
 
 

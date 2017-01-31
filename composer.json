@@ -8,7 +8,8 @@
     "bossa/phpspec2-expect": "1.*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.7"
+    "phpunit/phpunit": "^5.7",
+    "sensiolabs/behat-page-object-extension": "^2.0"
   },
   "config": {
     "bin-dir": "bin"

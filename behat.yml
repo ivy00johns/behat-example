@@ -8,6 +8,7 @@ default:
       selenium2: ~
       base_url: "http://127.0.0.1:32769"
       # mink_driver: true
+    SensioLabs\Behat\PageObjectExtension: ~
   suites:
     default:
       paths:
