@@ -1,3 +1,9 @@
+      | target                               |
+      | "/admin/admin/dashboard/"            |
+      | "/admin/sales/order/"                |
+      | "/admin/sales/invoice/"              |
+      | "/admin/sales/shipment/"             |
+      | "/admin/sales/creditmemo/"           |
       | "/admin/paypal/billing_agreement/"   |
       | "/admin/sales/transactions/"         |
       | "/admin/catalog/product/"            |
