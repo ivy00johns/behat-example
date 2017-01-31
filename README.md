@@ -6,23 +6,21 @@
 * The Test Suite needs to be configured in the `behat.yml` file and the `/app/features/bootstrap/FeatureContext.php` file before proceeding. In those files you can set the `base_url` for the Test Suite. Currently it points to the Docker instance of Magento Community if it is running locally.
 
 ### behat.yml
-    ```
+
     ...
     
     base_url: "http://127.0.0.1:32769"
     
     ...
-    ```
 
 
 ### FeatureContext.php
-    ```
     ...
     
     $baseUrl = 'http://127.0.0.1:32769'
     
     ...
-    ```
+
 
 
 
